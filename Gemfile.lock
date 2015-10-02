@@ -6,6 +6,8 @@ GEM
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -20,5 +22,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack-test
   sinatra (~> 1.4.4)
   thin
+
+BUNDLED WITH
+   1.10.6
