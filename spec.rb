@@ -1,15 +1,11 @@
 ENV['RACK_ENV'] = 'test'
 
-require_relative 'hello_world'  # <-- your sinatra app
-require 'rspec'
-require 'rack/test'
+require_relative 'hello_world'  # <-- our app
+require 'rspec'                 # <-- test framework
+require 'rack/test'             # <-- test framework
 
 describe 'The HelloWorld App' do
   include Rack::Test::Methods
-
-  def app
-    Sinatra::Application
-  end
 
   it "says hello world" do
     get '/'
